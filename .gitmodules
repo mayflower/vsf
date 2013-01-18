@@ -1,0 +1,3 @@
+[submodule "lib/lodash"]
+	path = lib/lodash
+	url = git://github.com/bestiejs/lodash.git
