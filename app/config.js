@@ -27,11 +27,13 @@ require.config({
 });
 
 require(['backbone'], function(ding) {
-    require(['images'], function(Images) {
+    require(['images', 'views/image'], function(Images, ImageView) {
         List = new Images();
         List.fetch({
             success: function()  {
-                console.dir(List.pluck('url'));
+                List.forEach(function(model) {
+                    var view = new ImageView({model: model});
+                });
             }
         });
     });
