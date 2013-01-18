@@ -1,4 +1,8 @@
 vsf
 ===
 
-yet another visual shopping
+visual shopping friend
+
+run server:
+
+node node_modules/webserver/webserver.js
